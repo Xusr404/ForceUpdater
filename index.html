@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ForceUpdater</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <div class="split left">
+        <div class="top sticky">
+            <h1 class="head">Connect to Miniserver</h1>
+        </div>
+        <div>
+            <div class="centered">
+                <div>
+                    <h2>Miniserver 1</h2>
+                    <input class="miniserverIp" onchange="msIpField()" type="text" list="savedMiniserver" placeholder="10.0.0.10">
+                </div>
+                <div>
+                    <h2>Miniserver 2</h2>
+                    <input class="miniserverIp" onchange="msIpField()" type="text" list="savedMiniserver" placeholder="10.0.0.10">
+                </div>
+            </div>
+        </div>
+
+        <datalist id="savedMiniserver">
+            <option value="10.0.0.0">
+            <option value="10.0.0.1">
+            <option value="10.0.0.2">
+            <option value="10.0.0.3">
+        </datalist>
+
+        <div class="bottom sticky">
+            <div class="centered">
+                <h2>Username</h2>
+                <input type="text" id="username" placeholder="admin">
+                <h2>password</h2>
+                <input class="pwdInput" id="password" type="text" placeholder="********">
+                <!-- <input class="pwdInput" id="password" type="password" placeholder="********"> -->
+                <button onclick="changePasswordVisability()" type="button" id="eye">
+                    <img src="https://cdn0.iconfinder.com/data/icons/feather/96/eye-16.png" alt="eye"/>
+                </button> <br>
+                <button class="btn btn-lg" onclick="connect()">Connect</button>
+            </div>
+        </div>
+    </div>
+    <div class="split right">
+        <div>
+            <div class="top sticky">
+                <h1 class="head">Userdata</h1>
+            </div>
+            <div class="centered">
+                <div class="centered">
+                    <h2>founded Devices</h2>
+
+                    <select list="savedMiniserver1" name="device types" id="device-types">
+                        <option value="all">Alle</option>
+                    </select>
+                    <datalist id="savedMiniserver1">
+                        <option value="10.10.0.0">
+                        <option value="10.10.0.1">
+                        <option value="10.01.0.2">
+                        <option value="10.01.0.3">
+                    </datalist>
+                    <br>
+
+                    <div class="list list-devices">
+                        <p class="list-item">Test 1</p>
+                        <p class="list-item">Test 2</p>
+                        <p class="list-item">Test 3</p>
+                        <p class="list-item">Test 3</p>
+                    </div>
+                    <button class="btn btn-lg" onclick="startWork()">start Forceupdate</button>
+                    <h2>Status</h2>
+                    <h2>Progress: 0%</h2>
+                    <div class="log-Output">
+                        <p>Line 1</p>
+                        <p>Line 2</p>
+                        <p>Line 3</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom sticky">
+        <table class="bottom">
+            <tr>
+                <th class="left">
+                    <p>Foundes Deviced: </p>
+                </th>
+                <th class="right">
+                    <p>Device: x/50</p>
+                </th>
+            </tr>
+        </table>
+    </div>
+    </div>
+
+
+    <script type="module" src="scripts/mainScript.js"></script>
+</body>
+
+</html>

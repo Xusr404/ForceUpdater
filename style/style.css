@@ -1,0 +1,152 @@
+body {
+    background-color: #333;
+    color: white;
+    font-family: Arial, sans-serif !important;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+input {
+    background-color: whitesmoke;
+    border-color: black;
+    border-radius: 4px;
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: scroll;
+    padding-top: 0px;
+    border-color: rgb(0, 168, 37);
+}
+
+.left {
+    left: 0;
+    text-align: center;
+}
+
+.right {
+    right: 0;
+}
+
+.centered {
+    position: sticky;
+    margin: auto;
+    text-align: center;
+}
+
+.head {
+    text-align: center;
+}
+
+#startWork {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+#eye {
+    margin-left: -35px;
+    border-width: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.pwdInput {
+    text-overflow: clip;
+}
+
+h2 {
+    margin-bottom: 15px;
+    margin-top: 40px;
+}
+
+.bottom {
+    position: fixed;
+    background-color: #333;
+    margin: 2px;
+    bottom: 0;
+    width: 50vmax;
+    line-height: 0;
+    text-align: center;
+    color: #e3e3ee;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.top {
+    position: fixed;
+    background-color: #333;
+    top: 0px;
+    width: 50vmax;
+    line-height: 0;
+    text-align: center;
+    color: #e3e3ee;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.sticky {
+    height: auto;
+}
+
+th {
+    width: 50%;
+}
+
+.border-left {
+    margin-left: 2px;
+    border-left: 2px;
+    border-left-style: solid;
+}
+
+.border-right {
+    margin-right: 2px;
+    border-right: 2px;
+    border-right-style: solid;
+}
+
+.btn {
+    background-color: rgba(11, 90, 15, 0.8);
+    font-size: 30px;
+    border-width: 0px;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+.btn-lg {
+    padding: .5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: .3rem;
+}
+
+#device-types {
+    height: 20px;
+    width: 25vmax;
+}
+
+select {
+    background-color: white;
+    border-radius: 0px;
+    border-width: 0px;
+}
+
+.list-item {
+    margin: 5px;
+    font-size: 20px;
+}
+
+.list-devices {
+    height: 160px;
+    scroll-behavior: auto;
+}
